@@ -1,0 +1,27 @@
+###
+platform :ios, '7.0'
+#use_frameworks!
+inhibit_all_warnings!
+
+###
+
+target 'TRunTime-ProtobufParser' do 
+  pod 'YYKit', '~> 1.0.7'
+  pod 'MJExtension', '~> 3.0.13'
+
+end
+
+###
+
+#Using to pod version 0.38.0 and compatibality old version.
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '7.0'
+            if target.name == 'OpenCore'
+                config.build_settings['ENABLE_BITCODE'] = 'NO'
+            end
+        end
+    end
+end
+

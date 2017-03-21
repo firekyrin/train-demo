@@ -1,0 +1,17 @@
+PODS:
+  - MJExtension (3.0.13)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - MJExtension (~> 3.0.13)
+  - YYKit (~> 1.0.7)
+
+SPEC CHECKSUMS:
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 78a67ac306c2d36ef6b14d4312cbaff51c92d1cc
+
+COCOAPODS: 1.2.0
